@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Imagenes Javascript</title>
+
+	<link rel="stylesheet" type="text/css" href="hojaEstilos.css">
+	<script src="https://kit.fontawesome.com/b3acf4906c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="contenedor">
+	<header>
+
+		<div class="logo">
+			<h1>Dante</h1>
+			<p>Desarrollo Web</p>
+		</div>
+
+		<form action="">
+			<input type="text" class="barra-busqueda" name="barra-busqueda" placeholder="Buscar" id="barra-busqueda">
+			</form>
+
+			<div class="categorias" id="categorias">
+				<a href="" class="activo">Todos</a>
+				<a href="">Pintura</a>
+				<a href="">Graffiti</a>
+				<a href="">Otros</a>
+			</div>
+		
+	</header>
+
+	<sectionn class="grid" id="grid">
+		<div class="item" 
+			data-categoria="pintura" 
+			data-etiquetas="pintura lienzo" 
+			data-descripcion="Pintura de paisaje."
+		>
+			<div class="item-contenido">
+				<img src="fotosGaleria/foto1.png">
+			</div>
+		</div>
+
+		<div class="item" 
+			data-categoria="graffiti" 
+			data-etiquetas="letras" 
+			data-descripcion="Graffiti en la ciudad."
+		>
+			<div class="item-contenido">
+				<img src="fotosGaleria/foto2.png">
+			</div>
+		</div>
+
+		<div class="item" 
+			data-categoria="otros" 
+			data-etiquetas="Otros cartel neon" 
+			data-descripcion="Cartel de arte."
+		>
+			<div class="item-contenido">
+				<img src="fotosGaleria/foto3.png">
+			</div>
+		</div>
+
+		<div class="item" 
+			data-categoria="pintura" 
+			data-etiquetas="lienzo pintura " 
+			data-descripcion="Trazados de pincel."
+		>
+			<div class="item-contenido">
+				<img src="fotosGaleria/foto4.png">
+			</div>
+		</div>
+	</sectionn>
+
+	<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="far fa-window-close"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+	</section>
+	
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+
+<script src="main.js"></script>
+</body>
+</html>
